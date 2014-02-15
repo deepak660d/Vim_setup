@@ -1,0 +1,387 @@
+visudo 
+exit
+pwd
+cd /usr/bin/
+rm p4
+cd /tmp/
+cd -
+wget http://www.perforce.com/downloads/perforce/r10.2/bin.linux26x86/p4
+chmod +x p4
+exit
+cd /tmp
+            wget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/linux-2.6.32.10.tar.bz2
+            wget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/linux-2.6.32.10.tar.bz2
+ tar -xjf linux-2.6.32.10.tar.bz2 
+            cd linux-2.6.32.10
+            export LINUX_TOP_DIR=`pwd`
+            make headers_install
+ls -l
+pwd
+cd ..
+ls -lh
+rm -rf linux-2.6.32.10.tar.bz2
+mv linux-2.6.32.10.tar.bz2.1 linux-2.6.32.10.tar.bz2
+ls -lh
+ tar -xjf linux-2.6.32.10.tar.bz2 
+            cd linux-2.6.32.10
+            export LINUX_TOP_DIR=`pwd`
+            make headers_install
+cd /usr/include
+            mv linux/ linux.orig/
+            mv asm/ asm.orig/
+            mv asm-generic/ asm-generic.orig/
+cp -r $LINUX_TOP_DIR/usr/include/linux/ .
+            cp -r $LINUX_TOP_DIR/usr/include/asm/ .
+            cp -r $LINUX_TOP_DIR/usr/include/asm-generic/ .
+yum install -y glib-devel-1.2.10-20.el5
+yum install -y libpcap-devel-0.9.4-15.el5
+yum install -y libtool-ltdl-devel-1.5.22-7.el5_4
+yum install -y postgresql-devel-8.1.23-6.el5_8
+yum install -y net-snmp-devel-5.3.2.2-20.el5
+cd
+pwd
+wget http://ftp.linux.ncsu.edu/pub/realmlinux/RealmLinux/5/base/i386/kernel/kernel-devel-2.6.18-308.8.2.el5.i686.rpm
+ls
+rpm -ivh --force --nomd5 kernel-devel-2.6.18-308.8.2.el5.i686.rpm 
+pwd
+cd /usr/local/bin/
+scp bhaskara@172.16.8.82:/usr/local/bin/apxs . 
+chmod +x apxs
+exit
+cd /tmp/
+scp bhaskara@172.16.8.82:/tmp/VMware* . 
+sh VMware-ovftool-2.1.0-467744-lin.i386.bundle 
+exit
+fdisk -l
+pwd
+cd /home/don/workspace/CBVM-c1/meru-depot/meru/release/6.0s/proto/686f/
+ls -lh
+date
+dd if=686f-2048.img of=/dev/sdc bs=1k
+exit
+fdisk -l
+mount
+ping 172.16.8.82
+scp bhaskara@172.16.8.82:/boot/grub/grub.conf /boot/grub/
+scp bhaskara@172.16.8.82:/tmp/grub.conf /boot/grub/
+scp bhaskara@172.16.8.82:/tmp/grub.conf .
+scp bhaskara@172.16.8.82:/tmp/grub.conf .
+vi grub.conf 
+vi grub.conf 
+fdisk -l
+cat /proc/cmdline 
+vi grub.conf 
+fdisk -l
+mount
+ls /
+ls /home/
+mount /dev/sdb1 /home/
+mount /dev/sdb2 /tmp/
+ls /home/
+su -l don
+adduser 
+vi /etc/login.defs 
+ls /home/
+ls /home/meru/
+ls /home/don
+adduser -d /home/meru -M -r meru
+ls /home/meru/
+su -l meru
+ls -l /home/
+ll
+chown -R meru:meru /home/meru
+ls /home/
+ls /home/ -l
+su -l meru
+ls -l /home/
+adduser -d /home/don -M -r don
+chown -r don:don /home/don
+chown -R don:don /home/don
+ls
+ls /home/don/
+ls /home/don/ -l
+ls /home/don/ -lwo
+ls -l /home/don/workspace/
+pwd
+su -l don
+passwd don
+~
+poweroff
+fdisk -l
+mount
+vi /etc/bashrc 
+exit
+vi /boot/grub/grub.conf
+cd /boot/grub/
+scp bhaskara@172.16.8.82:/boot/grub/grub.conf . 
+scp bhaskara@172.16.8.82:/tmp/grub.conf . 
+ls -l grub.conf 
+vi grub.conf 
+pwd
+cd -
+cat /boot/grub/grub.conf 
+ls /boot/grub/
+cd /boot/
+ls
+cd grub/
+ls
+grep -r "grub.conf" *
+strings stage2
+strings stage2 | grep "grub.conf"
+ls
+file stage2
+vi stage2
+pwd
+cd
+ls
+pwd
+grub-install --help
+ls
+rm grub.conf 
+mv /boot/grub/grub.conf . 
+ls
+grub-install --help
+grub-install /dev/sda
+df
+fdisk -l
+fdisk -l
+vi /boot/grub/device.map 
+grub-install /dev/sda
+cd /boot/grub/
+cp /root/grub.conf .
+ln -s grub.conf menu.lst
+ls -l
+chmod go-x grub.conf 
+ls -l
+chmod go-r grub.conf 
+ls -l
+ls
+cat menu.lst
+ls /etc/rc.local
+cat /etc/rc.local 
+ls -l /etc/rc.local 
+vi /etc/rc.d/rc.local 
+pwd
+cd
+poweroff
+mount
+ls /home/
+ls /home/don/workspace/CBVM-c1/meru-depot/meru/
+ls /home/don/workspace/CBVM-c1/meru-depot/meru/release/
+exit
+ls /boot/grub/
+cat /boot/grub/grub.conf 
+exit
+df
+fdisk -l
+mount /dev/sdc /mnt/
+echo $?
+dd if=/dev/sda bs=1k count=1
+dd if=/dev/sdb bs=1k count=1
+dd if=/dev/sdc bs=1k count=1
+echo $?
+dd if=/dev/sdc bs=1k count=1 2>&1 | grep 
+vi /etc/rc.local 
+fdisk -l
+ls /dev/sd
+vi /etc/rc.local 
+ls /dev/sdc
+ls /dev/sdc -lh
+ls /dev/sd* -lh
+man fdisk
+man parted
+fdisk -l /dev/sdc
+fdisk -s /dev/sdc
+expr `fdisk -s /dev/sdc` - 4096
+man parted
+parted /dev/sdc mkpartfs primary ext3 0 800
+parted /dev/sdc mkpartfs primary ext3 0 800 -i
+fdisk -l
+parted /dev/sdc mkpart primary 0 800 -i
+parted /dev/sdc1 mkpart primary 0 800 -i
+parted /dev/sdc -i
+fdisk -l
+parted /dev/sdc mkpartfs ext2 0 800 
+fdisk -l
+ipconfig eth0
+/sbin/ipconfig eth0
+ifconfig eth0
+poweroff
+fdisk -l
+parted /dev/sdc mkpartfs ext2 0 800
+parted
+parted --help
+parted -s /dev/sdc mkpartfs primary ext2 0 800
+which parted
+rpm -qf /sbin/parted 
+parted -s /dev/sdc mklabel msdos 
+fdisk -l
+parted -s /dev/sdc mkpartfs primary ext2 0 800
+fdisk -l
+parted -s /dev/sdc set 1 boot on
+fdisk -l
+parted -s /dev/sdc set 1 boot off
+fdisk -l
+df
+fdisk -l
+poweroff
+fdisk -l
+fdisk /dev/sdb
+fdisk -l
+mount /dev/sdb1 /home/
+mke2fs /dev/sdb1
+mke2fs /dev/sdb2
+cat /etc/fstab 
+cat /etc/rc.local 
+mount /dev/sdb1 /home/
+mount /dev/sdb2 /tmp/
+exit
+fdisk -l
+cat /etc/rc.local 
+mount
+if [ \( -d /dev/sdb1 \) -a \( -d /dev/sdb2 \) ]; then echo yes; done
+if [ \( -d /dev/sdb1 \) -a \( -d /dev/sdb2 \) ]; then echo yes; fi
+if [ \( -e /dev/sdb1 \) -a \( -e /dev/sdb2 \) ]; then echo yes; fi
+vi /etc/rc.local 
+ mount /dev/sdb1 /home
+    mount /dev/sdb2 /tmp
+ls /home/
+ls don
+exit
+mkdir foo
+cp /home/don/.bashrc foo/
+rm -rf /home/don/
+adduser
+adduser -d /home/don -m 
+adduser -d /home/don -m  don
+userdel don
+adduser -d /home/don -m -r  don 
+passwd  don
+exit
+ls
+pwd
+ls -a
+source .bashrc
+exit
+login dsingh
+pwd
+u
+w
+vim  ~/.bash_history 
+userdel don
+adduser -d /home/dsingh -m -r dsingh
+vim  ~/.bash_history 
+login dsingh
+cd 
+useradd
+sudo adduser
+vim  ~/.bash_history 
+pwd
+ls -a
+vim ~/.bashrc
+pwd
+exit
+ls
+w
+adduser
+useradd
+su
+exit
+fdisk -l
+vi /etc/rc.local 
+if [ \( -e /dev/sdb1 \) -a \( -e /dev/sdb2 \) ]; then echo y; fi
+ls /hom
+ls /home
+vi /etc/rc.local 
+poweroff
+mount
+exit
+ls
+id don
+usermod -l dsingh don
+exit
+usermod -l dsingh don
+man usermod
+q
+usermod -l don dsingh
+man usermod
+cd /etc/group
+vim /etc/group
+adduser dsingh
+su
+exit
+ls
+cd 
+/sbin/usermod
+ls
+cd /usr/sbin/
+ls
+ls | grep "usermod"
+usermod -c DeepakSingh -l dsingh don
+cd 
+/usr/sbin/usermod
+/usr/sbin/usermod -l dsingh don
+id dsingh
+id don
+passwd dsingh
+exit
+ yum groupinstall "X Windows System" "GNOME Desktop Environment" 
+ yum groupinstall "X Windows System" "GNOME Desktop Environment" 
+ yum groupinstall GNOME
+yum install cscope
+updatesdb
+update yum
+yum install cscope
+ls
+cd ..
+ls
+rm -fr don
+ls
+exit
+login dsingh
+ls
+vim /etc/sudoers 
+userdel don
+/usr/sbin/userdel don
+/usr/sbin/userdel dsingh
+exit
+yum install cscope
+yum -C info installed 
+yum install cscope 
+exit
+userdel
+userdel dsingh
+ls
+ls
+pwd
+userdel dsingh
+ls
+df -h
+cd /home/
+cd 
+ls -a
+vim .bashrc
+vim foo/
+vim .bash_history 
+adduser -d /home/dsingh -m -r dsingh
+passwd dsingh
+vim /etc/sudoers 
+yum install cscope
+ifconfig
+ls
+ssh dsingh@172.16.8.11
+ls
+ls
+passwd root
+pwd
+cd /home/dsingh/
+ls
+ls -a
+vim .bashrc
+grep -r "BH-Bnild-VM" /
+grep -r "BH-Build-VM" /
+ls
+cd /root/
+ls
+vim anaconda-ks.cfg 
+poweroff

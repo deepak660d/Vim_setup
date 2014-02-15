@@ -1,0 +1,21 @@
+[22-11-2013 12:21:35] Pradeep Reddy: export P4PORT=172.16.0.10:1666
+export P4CLIENT=work_space
+ccollab set scm perforce
+ccollab set collab http://sleet.merunetworks.com:8080 prangareddy
+ccollab set scmconfig P4PORT 172.16.0.10:1666
+ccollab set scmconfig P4USER prangareddy
+ccollab set scmconfig P4CLIENT work_space
+ccollab info
+
+
+
+[22-11-2013 12:21:49 | Edited 12:21:51] Pradeep Reddy: instead of prangareddy, use u'r account name
+[22-11-2013 12:22:11] Pradeep Reddy: and instead of work_space user u'r workspace name
+[10:06:38] shashikiran shirole: after that
+[22-11-2013 12:22:47] Pradeep Reddy: ccollab addchangelist new changelist_no
+[22-11-2013 12:24:47] Pradeep Reddy: use changelist_no to CL number that is there in pending CL list
+
+
+
+
+
